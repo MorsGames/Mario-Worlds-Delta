@@ -1,0 +1,4 @@
+/// @description Reset message
+
+message = "";
+
