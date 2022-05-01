@@ -66,7 +66,7 @@ if (state = "IN_LINE") {
             if (direction == 90) {
             
                 vspeed = -spd*3;
-                if (node.hsp == true) {
+                if (node.hsp) {
                 
                     if (x > xprevious)
                         hspeed = spd;
@@ -79,7 +79,7 @@ if (state = "IN_LINE") {
             else if (direction == 0) {
             
                 //If this is a jump node
-                if (node.jump == true) {
+                if (node.jump) {
                 
                     vspeed = -spd*2.5;
                     hspeed = spd*2;
@@ -92,7 +92,7 @@ if (state = "IN_LINE") {
             else if (direction == 180) {
             
                 //If this is a jump node
-                if (node.jump == true) {
+                if (node.jump) {
                 
                     vspeed = -spd*2.5;
                     hspeed = -spd*2;

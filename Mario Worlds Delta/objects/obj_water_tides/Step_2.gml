@@ -50,11 +50,11 @@ player = collision_rectangle(water.bbox_left, water.bbox_top, water.bbox_right, 
 
 //If player is overlapping this object and it's swimming.
 if (player)
-&& (player.swimming == true) 
+&& (player.swimming) 
 && (!instance_exists(obj_player_transform)) {
 
     //If this object can push
-    if (push == true)
+    if (push)
         if (!collision_rectangle(player.bbox_left-1, player.bbox_top+4, player.bbox_left, player.bbox_bottom-1, obj_solid, 1, 1))
             player.x -= 0.3;
 }

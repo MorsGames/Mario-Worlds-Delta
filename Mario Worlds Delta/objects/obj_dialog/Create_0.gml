@@ -1,15 +1,11 @@
 /// @description Displays a message inside a box!
 
 /*
-**  This item uses creation code!
+**  This item uses variable definitions
 **
 **  varmsg = Message to display in the message box.
 **  mugshot = Mugshot of the character. (Use 'noone' for no mugshot)
 */
-
-//Default Value:
-varmsg = "No message was set";
-mugshot = noone;
 
 //Font
 font = global.fontdialog; //global.fontmsg;

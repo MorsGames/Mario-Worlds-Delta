@@ -45,7 +45,7 @@ offsetnext = 0;
 offsetxscale = 1;
 
 //Update sprite
-if (obj_levelcontrol.inisection == "Snow") {
+if (obj_controller_level.ini_section == "Snow") {
 
     //Set the sprite
     sprite_index = spr_pokey_snow;

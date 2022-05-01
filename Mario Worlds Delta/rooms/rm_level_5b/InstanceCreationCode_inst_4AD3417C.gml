@@ -1,2 +1,2 @@
-inisection = "Castle"
-leveltime = 400;
+ini_section = "Castle"
+level_time = 400;

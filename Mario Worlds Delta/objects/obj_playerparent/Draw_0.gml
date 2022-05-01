@@ -12,9 +12,9 @@ if (squat_ready == 1)
     draw_sprite_ext(sprite_index, image_index, round(x), round(y)+1, xscale, 1, 0, c_white, image_alpha);     
     
     //Draw blended sprite
-    draw_set_blend_mode(bm_add);
+    gpu_set_blendmode(bm_add);
     draw_sprite_ext(sprite_index, image_index, round(x), round(y)+1, xscale, 1, 0, c_white, image_alpha);
-    draw_set_blend_mode(bm_normal);      
+    gpu_set_blendmode(bm_normal);      
 }
 
 //Otherwise

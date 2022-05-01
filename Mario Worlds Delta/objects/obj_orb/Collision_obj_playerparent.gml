@@ -17,7 +17,7 @@ if (image_alpha == 1)
     audio_stop_sound(bgm_starman);
     
     //Stop both music and timer
-    with (obj_levelcontrol) {
+    with (obj_controller_level) {
     
         musicdisable = true;
         alarm[1] = 1;
@@ -40,7 +40,7 @@ if (image_alpha == 1)
     with (obj_water) visible = 0;
     with (obj_water_tides) visible = 0;
     with (obj_lightparent) visible = 0;
-    with (obj_lightcontrol) visible = 0;
+    with (obj_controller_lighting) visible = 0;
     with (obj_effectsparent) visible = 0;
     with (obj_rainmaker) visible = 0;
     

@@ -8,7 +8,7 @@ if (instance_exists(obj_playerparent)) {
     
         //If the player is not on this cloud
         if (player_on == false)
-        && (can_on == true)
+        && (can_on)
         && (obj_playerparent.vspeed > 0)
         && (obj_playerparent.floatnow == 0)
         && (obj_playerparent.state != statetype.climb) {
@@ -54,7 +54,7 @@ if (instance_exists(obj_playerparent)) {
 if (instance_exists(obj_playerparent)) {
     
     //If the player is on this cloud
-    if (player_on == true) {
+    if (player_on) {
         
         //Force set player variables
         obj_playerparent.jumpstyle = 0;

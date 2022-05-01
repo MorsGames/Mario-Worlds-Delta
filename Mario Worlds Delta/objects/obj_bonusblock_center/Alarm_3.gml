@@ -6,7 +6,7 @@ if (!instance_exists(obj_1up)) {
     audio_stop_play_sound(snd_bonusend, 0, false);
     
     //Stop music
-    with (obj_levelcontrol) {
+    with (obj_controller_level) {
     
         musicdisable = true;
         alarm[1] = 1;

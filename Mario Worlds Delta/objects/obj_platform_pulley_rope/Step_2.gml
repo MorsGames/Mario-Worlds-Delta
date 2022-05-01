@@ -7,7 +7,7 @@ if (ready = 0) {
     
     if (platform) {
     
-        if (platform.ready == true) {
+        if (platform.ready) {
     
             //Make both platforms fall.
             ready = true;

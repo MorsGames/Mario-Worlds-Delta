@@ -1,3 +1,3 @@
-inisection = "Overworld";
-leveltime = 400;
-camlock = true;
+ini_section = "Overworld";
+level_time = 400;
+cam_lock = true;

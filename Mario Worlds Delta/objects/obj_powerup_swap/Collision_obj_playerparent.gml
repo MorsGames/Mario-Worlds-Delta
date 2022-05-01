@@ -1,7 +1,7 @@
 /// @description Get the item shown
 
 //If the item is not overlapping a solid.
-if (ready == true) {
+if (ready) {
 
     //Check the sprite
     switch (sprite_index) {

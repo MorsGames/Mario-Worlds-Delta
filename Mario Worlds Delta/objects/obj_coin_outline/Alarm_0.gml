@@ -1,7 +1,7 @@
 /// @description Turn into a real coin or a brick
 
 //If the pswitch effect is active
-if (obj_levelcontrol.switchon == 0) {
+if (obj_controller_level.switchon == 0) {
 
     //Play 'Coin' sound
     audio_stop_play_sound(snd_coin, 0, false);

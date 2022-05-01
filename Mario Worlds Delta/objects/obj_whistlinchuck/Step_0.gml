@@ -13,7 +13,7 @@ if (instance_exists(obj_playerparent)) {
     if (ready == 0) {
     
         //If the player is within the range
-        if (swimming == true)
+        if (swimming)
         && (obj_playerparent.x > bbox_left-32)
         && (obj_playerparent.x < bbox_right+32) {
         

@@ -6,7 +6,7 @@ if (animate == false)
 
     alarm[0] = 300;
     
-if (animate == true)
+if (animate)
 
     alarm[0] = 30;
 

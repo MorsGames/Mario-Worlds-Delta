@@ -1,1 +1,1 @@
-inisection = "Snow";
+ini_section = "Snow";

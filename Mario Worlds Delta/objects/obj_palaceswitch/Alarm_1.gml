@@ -7,12 +7,12 @@ with (instance_create(0, 0, obj_message)) {
     
     //Set the message depending of what switch was pressed
     if (other.sprite_index = spr_palaceswitch_y)
-        inisection = "MSG_SWY";
+        ini_section = "MSG_SWY";
     else if (other.sprite_index = spr_palaceswitch_g)
-        inisection = "MSG_SWG";    
+        ini_section = "MSG_SWG";    
     else if (other.sprite_index = spr_palaceswitch_r)
-        inisection = "MSG_SWR";    
+        ini_section = "MSG_SWR";    
     else if (other.sprite_index = spr_palaceswitch_b)
-        inisection = "MSG_SWB";    
+        ini_section = "MSG_SWB";    
 }
 

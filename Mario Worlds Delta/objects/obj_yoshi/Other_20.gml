@@ -6,7 +6,7 @@ f = 0;
 m = player_ride();
 
 //If Yoshi is licking something
-if (licking == true) {
+if (licking) {
 
     //If the 'Up' key is being held or Yoshi is jumping
     if (sprite_index == spr_yoshi_lick)
@@ -19,8 +19,8 @@ if (licking == true) {
 else {
 
     //If the player is crouched down or sliding down a slope
-    if (obj_playerparent.crouch == true)
-    || (obj_playerparent.sliding == true)
+    if (obj_playerparent.crouch)
+    || (obj_playerparent.sliding)
     || (crouch_position > 0)
         f = 1;
     else

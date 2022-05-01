@@ -5,10 +5,10 @@ if (state == yoshistate.idle)
 || (state == yoshistate.runaway) {
 
     //If the player jumps on Yoshi and Yoshi can be ridden
-    if (rideme == true) 
+    if (rideme) 
     && (other.vspeed > 0) 
     && (other.holding == 0)
-    && (other.visible == true) {
+    && (other.visible) {
     
         //Play 'Yoshi' sound
         audio_stop_play_sound(snd_yoshi, 0, false);

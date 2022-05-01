@@ -19,7 +19,7 @@ function player_behaviour_climb() {
 	flying = 0;
 
 	//If controls are enabled
-	if (control_enable == true) {
+	if (control_enable) {
 
 	    //Punch the net
 	    if (netsmack < 4)

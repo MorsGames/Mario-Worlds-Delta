@@ -45,8 +45,8 @@ else if (state == yoshistate.ridden) {
         //If Yoshi does not have anything on the mount and 'Action 2' is pressed
         if (input_check_pressed(input.action1))
         && (licking == 0)
-        && (obj_playerparent.gravity_enable == true)
-        && (obj_playerparent.control_enable == true) {
+        && (obj_playerparent.gravity_enable)
+        && (obj_playerparent.control_enable) {
         
             //If the mouth is empty
             if (mouthholder == noone) {
@@ -188,7 +188,7 @@ else {
     if (instance_exists(obj_playerparent)) {
     
         //If Yoshi is licking something
-        if (licking == true) {
+        if (licking) {
         
             //If the 'Up' key is being held or Yoshi is jumping.
             if (locked == 1) {
@@ -227,8 +227,8 @@ else {
         else if (licking == false) {
         
             //If the player is crouched down or it is sliding down a slope
-            if (obj_playerparent.crouch == true)
-            || (obj_playerparent.sliding == true)
+            if (obj_playerparent.crouch)
+            || (obj_playerparent.sliding)
             || (crouch_position > 0) {
             
                 //If Yoshi is holding something on his mouth

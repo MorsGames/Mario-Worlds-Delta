@@ -20,7 +20,7 @@ draw_text(_xx+32, _yy+23, string_hash_to_newline(string_format(lives, 2, 0)));
 
 //Ace Coins
 var a = 0;
-if (ds_map_size(displaydragoncoins) < 5) {
+if (displaydragoncoins != -1 && ds_map_size(displaydragoncoins) < 5) {
     
     repeat (ds_map_size(displaydragoncoins)) {
     

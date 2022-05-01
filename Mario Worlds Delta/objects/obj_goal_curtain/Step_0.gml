@@ -19,14 +19,14 @@ else {
     draw_clear(c_white-surf_colour);
     
     //Set the blending mode
-    draw_set_blend_mode(bm_subtract);
+    gpu_set_blendmode(bm_subtract);
     
     //Draw the transition image.
     draw_set_circle_precision(64);
     draw_circle_colour(x-__view_get( e__VW.XView, 0 ), y-__view_get( e__VW.YView, 0 ), scale, c_white, c_white, false);
     
     //Set the blending end mode
-    draw_set_blend_mode(bm_normal);
+    gpu_set_blendmode(bm_normal);
     
     //Reset the surface target
     surface_reset_target();

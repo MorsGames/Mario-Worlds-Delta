@@ -1,1 +1,1 @@
-inisection = "Boss";
+ini_section = "Boss";

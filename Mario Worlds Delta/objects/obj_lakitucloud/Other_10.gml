@@ -1,14 +1,14 @@
 /// @description Movement
 
 //If the player is on the cloud
-if (player_on == true) 
+if (player_on) 
 && (instance_exists(obj_playerparent)) {
 
     //Force set idle state
     obj_playerparent.state = statetype.idle;
 
     //If player controls are enabled
-    if (obj_playerparent.control_enable == true) {
+    if (obj_playerparent.control_enable) {
     
         //If 'Action 2' is pressed, move faster
         if (input_check(input.action1))

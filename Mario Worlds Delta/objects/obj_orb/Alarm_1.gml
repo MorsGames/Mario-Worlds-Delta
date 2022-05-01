@@ -43,9 +43,9 @@ with (obj_hud) {
 instance_activate_object(obj_audio_loop_sound);
 
 //Activate lighting
-instance_activate_object(obj_lightcontrol);
+instance_activate_object(obj_controller_lighting);
 instance_activate_object(obj_lightparent);
-with (obj_lightcontrol) visible = 1;
+with (obj_controller_lighting) visible = 1;
 with (obj_lightparent) visible = 1;
 
 //Activate water tides

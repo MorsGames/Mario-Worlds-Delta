@@ -1,7 +1,7 @@
 /// @description  Game Introduction Object
 
 // Text to read
-inisection = "MSG_INT";
+ini_section = "MSG_INT";
 
 // Read text
 alarm[0] = 65;

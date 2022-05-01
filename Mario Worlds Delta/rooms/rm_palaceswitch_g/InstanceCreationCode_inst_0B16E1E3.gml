@@ -1,2 +1,2 @@
-inisection = "Bonus";
-leveltime = 200;
+ini_section = "Bonus";
+level_time = 200;

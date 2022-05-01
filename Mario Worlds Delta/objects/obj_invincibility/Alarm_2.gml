@@ -1,7 +1,7 @@
 /// @description Play invincibility music
 
 //End level music and reset global.music
-obj_levelcontrol.alarm[1] = 1;
+obj_controller_level.alarm[1] = 1;
 
 //Play 'Starman' theme
 if (!audio_is_playing(bgm_pswitch))

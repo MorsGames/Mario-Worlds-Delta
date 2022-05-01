@@ -1,1 +1,1 @@
-inisection = "MSG_003";
+ini_section = "MSG_003";

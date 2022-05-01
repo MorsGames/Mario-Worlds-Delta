@@ -41,7 +41,7 @@ global.mountcolour = 0;
 global.powerup = cs_pow_small;
 
 //Stop both music and timer
-with (obj_levelcontrol) {
+with (obj_controller_level) {
 
     musicdisable = true;
     alarm[1] = 1;
@@ -61,7 +61,7 @@ with (obj_yoshi) {
 //Make following objects invisible
 with (obj_water_tides) visible = 0;
 with (obj_lightparent) visible = 0;
-with (obj_lightcontrol) visible = 0;
+with (obj_controller_lighting) visible = 0;
 with (obj_effectsparent) visible = 0;
 with (obj_rainmaker) visible = 0;
 

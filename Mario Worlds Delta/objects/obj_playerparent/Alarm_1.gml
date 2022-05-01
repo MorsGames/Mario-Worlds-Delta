@@ -1,6 +1,6 @@
 /// @description Make the player blink when invulnerable
 
-if (invulnerable == true) {
+if (invulnerable) {
 
     image_alpha = !image_alpha;
     alarm[1] = 1;

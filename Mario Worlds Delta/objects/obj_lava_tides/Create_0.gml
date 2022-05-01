@@ -22,7 +22,7 @@ with (lava) {
 }
 
 //Create lighting
-if (instance_exists(obj_lightcontrol)) {
+if (instance_exists(obj_controller_lighting)) {
     
     //Top light    
     with (instance_create(x, y, obj_light_lava_top)) {

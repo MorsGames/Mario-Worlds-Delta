@@ -1,7 +1,7 @@
 /// @description Displays a message
 
 //Ini section to read
-inisection = "NO_MSG";
+ini_section = "NO_MSG";
 
 //Message to display
 message = "";

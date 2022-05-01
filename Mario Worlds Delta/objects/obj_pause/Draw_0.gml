@@ -10,13 +10,13 @@ draw_set_colour(c_white);
 if (background_exists(back)) {
     
     //Disable alpha blending.
-    draw_enable_alphablend(0);
+    gpu_set_blendenable(0);
     
     //Draw the screenshot
     draw_background(back, __view_get( e__VW.XView, 0 ), __view_get( e__VW.YView, 0 ));
     
     //Enable alpha blending.
-    draw_enable_alphablend(1);
+    gpu_set_blendenable(1);
 }
 
 //Align the text

@@ -4,7 +4,7 @@
 event_inherited();
 
 //Charge when crouched down
-if (crouch == true)
+if (crouch)
 && (state != statetype.jump) {
 
     //Increment timer

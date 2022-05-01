@@ -11,7 +11,7 @@ with (obj_warpparent) coins++;
 global.coins++;
 
 //Get 10 points if this didn't came out from a enemy
-if (nopoints == true)
+if (nopoints)
     score += 10;
 else {
 

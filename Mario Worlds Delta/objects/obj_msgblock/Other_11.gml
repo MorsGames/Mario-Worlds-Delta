@@ -8,7 +8,7 @@ if (!outside_view(16)) {
     
     //Show message
     with (instance_create(0, 0, obj_message)) 
-        inisection = other.inisection;
+        ini_section = other.ini_section;
 }
 
 //Allow block hit

@@ -2,7 +2,7 @@
 
 //If the door is locked
 if (lock == 1)
-&& (other.held == true) {
+&& (other.held) {
 
     //Play 'Key' sound
     audio_stop_play_sound(snd_key, 0, false);

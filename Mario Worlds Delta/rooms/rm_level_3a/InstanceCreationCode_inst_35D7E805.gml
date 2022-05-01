@@ -1,2 +1,2 @@
-inisection = "Classic"
-leveltime = 400;
+ini_section = "Classic"
+level_time = 400;

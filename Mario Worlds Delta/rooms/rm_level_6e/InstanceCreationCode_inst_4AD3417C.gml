@@ -1,2 +1,2 @@
-inisection = "GhostHouse"
-leveltime = 1;
+ini_section = "GhostHouse"
+level_time = 1;

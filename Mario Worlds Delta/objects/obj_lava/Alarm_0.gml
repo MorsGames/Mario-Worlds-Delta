@@ -4,7 +4,7 @@
 hh = sprite_height-1;
 
 //If the light exists
-if (instance_exists(obj_levelcontrol)) {
+if (instance_exists(obj_controller_level)) {
 
     //Create top light
     with (instance_create(x, y, obj_light_static)) {

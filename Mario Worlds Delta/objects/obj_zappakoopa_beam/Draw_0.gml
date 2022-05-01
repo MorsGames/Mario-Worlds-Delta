@@ -1,7 +1,7 @@
 /// @description Draw the beam when ready
 
 //Set the blend mode
-draw_set_blend_mode(bm_add);
+gpu_set_blendmode(bm_add);
     
 //Set the alpha
 draw_set_alpha(alpha);
@@ -29,5 +29,5 @@ if (instance_exists(parent)) {
 draw_set_alpha(1);
 
 //Set the blend mode to normal
-draw_set_blend_mode(bm_normal);
+gpu_set_blendmode(bm_normal);
 

@@ -81,7 +81,7 @@ if (invulnerable == false) {
                 audio_stop_play_sound(snd_powerdown, 0, false);
                 
                 //Drop reserve item
-                with (obj_levelcontrol) {
+                with (obj_controller_level) {
                 
                     if (global.reserveitem > cs_pow_small)
                         event_user(1);

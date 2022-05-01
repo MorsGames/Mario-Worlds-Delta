@@ -1,7 +1,7 @@
 /// @description Start engine
 
 //Create spotlight
-if (instance_exists(obj_lightcontrol)) {
+if (instance_exists(obj_controller_lighting)) {
 
     //Create a light
     light = instance_create(x, y, obj_light_rengine);

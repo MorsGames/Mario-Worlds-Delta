@@ -66,7 +66,7 @@ if (held == false) {
     }
     
     //Otherwise, if the item is embed in a wall
-    else if (inwall == true) {
+    else if (inwall) {
     
         //Move it until it does not make contact with a solid
         x -= 2.5*sign(dir);

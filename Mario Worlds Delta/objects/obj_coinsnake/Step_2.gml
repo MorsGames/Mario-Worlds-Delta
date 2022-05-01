@@ -1,7 +1,7 @@
 /// @description Coin Snake logic
 
 //Use appropiate sprite
-switch (obj_levelcontrol.switchon) {
+switch (obj_controller_level.switchon) {
 
     //On
     case (1): sprite_index = spr_qblock_empty; break;

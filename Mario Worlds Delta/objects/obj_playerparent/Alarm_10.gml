@@ -1,7 +1,7 @@
 /// @description Manage player projectiles
 
 //If controls are not disabled and the player is not doing a special movement
-if (control_enable == true)
+if (control_enable)
 && (flying == 0)
 && (holding == 0)
 && (kicking == 0)

@@ -1,6 +1,6 @@
 /// @description Turn into a silver coin if the Gray P-Switch is active
 
-if (obj_levelcontrol.gswitchon == 1) {
+if (obj_controller_level.gswitchon == 1) {
 
     //Turn into a coin
     with (instance_create(round(bbox_left+bbox_right)/2, round(bbox_top+bbox_bottom)/2-8, obj_coin_silver)) {

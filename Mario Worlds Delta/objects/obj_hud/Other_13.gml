@@ -35,7 +35,7 @@ draw_sprite_ext(spr_hud_sma2_acecoins, 2, _xx+88, _yy-_yp, 1, 1, 0, c_white, 1);
 
 //Ace Coins
 var a = 0;
-if (ds_map_size(displaydragoncoins) < 5) {
+if (displaydragoncoins != -1 && ds_map_size(displaydragoncoins) < 5) {
     
     repeat (ds_map_size(displaydragoncoins)) {
         

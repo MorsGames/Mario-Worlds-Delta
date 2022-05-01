@@ -10,10 +10,10 @@ image_speed = 0;
 mysolid = noone;
 
 //IF the level controller exists
-if (instance_exists(obj_levelcontrol)) {
+if (instance_exists(obj_controller_level)) {
 
     //Become solid if the pswitch is active
-    if (obj_levelcontrol.switchon == 1) {
+    if (obj_controller_level.switchon == 1) {
     
         mysolid = instance_create(x, y, obj_solid)
         image_index = 0;

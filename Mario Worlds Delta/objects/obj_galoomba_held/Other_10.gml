@@ -53,7 +53,7 @@ else {
     if (other.object_index == obj_playerparent) {
     
         //If the player is sliding
-        if (other.sliding == true)
+        if (other.sliding)
             imdead.hspeed = obj_playerparent.hspeed;
     }
     

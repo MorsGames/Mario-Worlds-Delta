@@ -10,8 +10,8 @@ global.exit_id = exit_id;
 if (destination == noone) {
 
     //Reset barrier
-    obj_levelcontrol.barrier = 0;
-    obj_levelcontrol.alarm[5] = 3;    
+    obj_controller_level.barrier = 0;
+    obj_controller_level.alarm[5] = 3;    
     
     //Close the door
     my_door.image_speed = 0;

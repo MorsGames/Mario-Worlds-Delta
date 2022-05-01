@@ -61,7 +61,7 @@ function player_behaviour_swim() {
 
 	//Make the player get up if jumping
 	if (state == statetype.jump)
-	&& (crouch == true)
+	&& (crouch)
 	    crouch = false;
 
 	//Cap player vertical speed
@@ -78,7 +78,7 @@ function player_behaviour_swim() {
     
 	//If controls are not disabled and the player is not embed in a wall
 	if (inwall == false) 
-	&& (control_enable == true) {
+	&& (control_enable) {
 
 	    //If 'Action 1' is pressed and the player is not holding anything
 	    if (holding != 1)

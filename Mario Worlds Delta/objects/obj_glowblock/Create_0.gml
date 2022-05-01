@@ -7,7 +7,7 @@ event_inherited();
 image_speed = 0.1;
 
 //Create light if required
-if (instance_exists(obj_lightcontrol)) {
+if (instance_exists(obj_controller_lighting)) {
 
     mylight = instance_create(0, 0, obj_light_npc);
     with (mylight) {

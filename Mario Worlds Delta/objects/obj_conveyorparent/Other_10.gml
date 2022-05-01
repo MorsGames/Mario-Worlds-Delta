@@ -1,7 +1,7 @@
 /// @description Toggle conveyor direction
 
 //If the conveyor can toggle it's direction
-if (toggle == true) {
+if (toggle) {
 
     //If moving right
     if (image_speed > 0)

@@ -16,7 +16,7 @@ if (ready == 0) {
         ini_open("MWDMessage.ini");
         
         //Obtain the message from the given INI section
-        message = ini_read_string(inisection, "text", 0);
+        message = ini_read_string(ini_section, "text", 0);
         
         //Close INI
         ini_close();

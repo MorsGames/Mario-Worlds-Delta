@@ -24,7 +24,7 @@ if (!held) {
     //Grab it if the player is above    
     if (input_check_pressed(input.action1))
     && (collision_rectangle(bbox_left, bbox_top-1, bbox_right, bbox_top-1, obj_playerparent, 0, 0))
-    && (can_hold() == true) {
+    && (can_hold()) {
     
         //Make the player hold it
         obj_playerparent.holding = 1;
@@ -60,7 +60,7 @@ else {
 }
 
 //Cancel bounce if kicked
-if (ready == true)
+if (ready)
     bouncy = false;
 else
     bouncy = true;

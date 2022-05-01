@@ -129,7 +129,7 @@ else {
     else {
         
         //If Luigi is crouched down
-        if (crouch == true) {
+        if (crouch) {
         
             //Set up the crouch sprite
             sprite_index = player_crouch();
@@ -325,7 +325,7 @@ else {
                                 image_speed = (0.065*(inice*4))+abs(hspeed)/7.5;
                                 
                                 //Set up the sprite
-                                if (run == true)
+                                if (run)
                                     sprite_index = player_run();
                                 else
                                     sprite_index = player_walk();
@@ -339,7 +339,7 @@ else {
                             if (swimming == false) {
                             
                                 //If Luigi is doing a spinjump
-                                if (jumpstyle == true) {
+                                if (jumpstyle) {
                                 
                                     //Set cape state
                                     with (obj_cape) {
@@ -440,7 +440,7 @@ else {
                                     else {
                                 
                                         //If Luigi is running
-                                        if (run == true) {
+                                        if (run) {
                                         
                                             //Set the sprite
                                             sprite_index = player_runjump();
@@ -464,7 +464,7 @@ else {
                             }
                             
                             //Otherwise, if Luigi is swimming
-                            else if (swimming == true) {
+                            else if (swimming) {
                             
                                 //With the cape
                                 with (obj_cape) {
@@ -549,7 +549,7 @@ else {
                     }
                     
                     //Otherwise, if the player is kicking something
-                    else if (kicking == true) {
+                    else if (kicking) {
                     
                         //Set the sprite
                         sprite_index = player_kick();
@@ -597,7 +597,7 @@ else {
                 }
                 
                 //Otherwise, if the player is sliding down a slope
-                else if (sliding == true) {
+                else if (sliding) {
                 
                     //Set the sprite
                     sprite_index = player_slide();
@@ -648,7 +648,7 @@ else {
             else if (holding == 1) {
             
                 //If Luigi is turning around
-                if (turnnow == true) {
+                if (turnnow) {
                 
                     //Set the sprite
                     sprite_index = player_spin();
@@ -710,7 +710,7 @@ else {
                         if (swimming == false) {
                         
                             //If Luigi is doing a spinjump
-                            if (jumpstyle == true) {
+                            if (jumpstyle) {
                                                                         
                                 //Set cape state
                                 with (obj_cape) {
@@ -769,7 +769,7 @@ else {
                         }
                         
                         //Otherwise, if the player is swimming
-                        else if (swimming == true) {
+                        else if (swimming) {
                         
                             //With the cape
                             with (obj_cape) {

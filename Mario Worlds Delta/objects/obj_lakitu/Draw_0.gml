@@ -14,7 +14,7 @@ if (type == 1)
 draw_sprite_ext(spr_lakitu_cloud_front, type, round(x), round(y) + 10, 1, 1, 0, c_white, 1);
 
 //Rod
-if (fishing == true) {
+if (fishing) {
     
     //Draw lakitu reel
     draw_sprite_ext(spr_lakitu_reel, type, round(x)-baitx, round(y)-baity, 1, 1, 0, c_white, 1);

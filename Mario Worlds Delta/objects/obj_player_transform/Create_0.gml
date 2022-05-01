@@ -20,7 +20,7 @@ loopnumb = 0;
 back = -1;
 
 //If the screen can freeze
-if (global.screenfreeze == true) {
+if (global.screenfreeze) {
     
     //Make the player invisible
     if (instance_exists(obj_playerparent)) {
@@ -38,7 +38,7 @@ if (global.screenfreeze == true) {
         obj_playerparent.visible = false;
         
         //Obtain cape
-        if (obj_cape.visible == true) {
+        if (obj_cape.visible) {
         
             //Obtain sprite from cape
             capesprite = obj_cape.sprite_index;
@@ -65,7 +65,7 @@ if (global.screenfreeze == true) {
     //Make following objects invisible
     with (obj_water_tides) visible = 0;
     with (obj_lightparent) visible = 0;
-    with (obj_lightcontrol) visible = 0;
+    with (obj_controller_lighting) visible = 0;
     with (obj_effectsparent) visible = 0;
     with (obj_rainmaker) visible = 0;
     

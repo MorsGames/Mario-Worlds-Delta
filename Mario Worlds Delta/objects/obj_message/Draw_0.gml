@@ -4,13 +4,13 @@
 if (background_exists(back)) {
 
     //Disable alpha blending
-    draw_enable_alphablend(0);
+    gpu_set_blendenable(0);
     
     //Draw screenshot
     draw_background(back, __view_get( e__VW.XView, 0 ), __view_get( e__VW.YView, 0 ));
     
     //Enable alpha blending
-    draw_enable_alphablend(1);
+    gpu_set_blendenable(1);
 }
 
 //Draw the message box
@@ -32,7 +32,7 @@ if (scale == 1) {
     draw_text_colour_shadowed(__view_get( e__VW.XView, 0 ) + __view_get( e__VW.WView, 0 ) / 2 - 72, __view_get( e__VW.YView, 0 ) + 46, string(message), c_black, c_white, 1, 1, 1, 1);
     
     //If this is a switch palace message, draw blocks
-    switch (inisection) {
+    switch (ini_section) {
     
         //Yellow Switch Palace
         case ("MSG_SWY"): {

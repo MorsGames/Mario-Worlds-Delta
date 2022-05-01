@@ -14,7 +14,7 @@ mom = -1;
 length = 0;
 
 //Set up orange light
-if (instance_exists(obj_lightcontrol)) {
+if (instance_exists(obj_controller_lighting)) {
     
     with (instance_create(0, 0, obj_light_npc)) {
     

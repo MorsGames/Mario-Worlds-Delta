@@ -1,1 +1,1 @@
-inisection = "Bonus";
+ini_section = "Bonus";

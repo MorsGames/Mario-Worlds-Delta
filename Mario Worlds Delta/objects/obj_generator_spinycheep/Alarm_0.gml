@@ -4,7 +4,7 @@
 if (instance_exists(obj_playerparent)) {
 
     //If the player is inside the spawn area, proceed
-    if (obj_levelcontrol.gswitchon == false)
+    if (obj_controller_level.gswitchon == false)
     && (point_in_rectangle(obj_playerparent.x, obj_playerparent.y, xmin, 0, xmax, room_height)) {
     
         //Repeat

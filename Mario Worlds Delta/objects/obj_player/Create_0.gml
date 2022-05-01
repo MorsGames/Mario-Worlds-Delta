@@ -11,8 +11,8 @@ if (global.postchange == -1) {
     with (player_create(xstart, ystart)) {
     
         //Put camera in position
-        if (instance_exists(obj_levelcontrol))
-            obj_levelcontrol.x = x;
+        if (instance_exists(obj_controller_level))
+            obj_controller_level.x = x;
     }
 }
 

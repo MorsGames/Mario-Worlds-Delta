@@ -56,7 +56,7 @@ function player_behaviour_slide() {
 	hspeedmax = hspeed_run;
 
 	//If controls are enabled
-	if (control_enable == true) {
+	if (control_enable) {
 
 	    //If 'Action 1' is pressed, make the player jump
 	    if ((input_check_pressed(input.action0))

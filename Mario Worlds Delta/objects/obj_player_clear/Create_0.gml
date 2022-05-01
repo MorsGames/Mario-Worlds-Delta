@@ -11,7 +11,7 @@ audio_stop_sound(bgm_pswitch);
 audio_stop_sound(bgm_starman);
 
 //Stop both music and timer
-with (obj_levelcontrol) {
+with (obj_controller_level) {
 
     musicdisable = true;
     alarm[1] = 1;

@@ -10,7 +10,7 @@ if (stomp != -1)
 
     //If the player is sliding down a slope
     if (vulnerable < 99)
-    && (other.sliding == true) {
+    && (other.sliding) {
     
         //Get points based on combo
         if (other.hitcombo == 0) { //200 points

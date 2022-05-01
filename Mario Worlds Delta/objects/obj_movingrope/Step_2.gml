@@ -6,7 +6,7 @@ if (myrope != noone) {
     if (state == "IDLE") {
     
         //If the player is on the rope
-        if (myrope.ison == true)
+        if (myrope.ison)
             state = "IN_LINE";
     }
     

@@ -16,7 +16,7 @@ if (!global.yoshi_rescued) {
     with (instance_create(0, 0, obj_message)) {
         
         // Grab the text
-        inisection = "MSG_YOS";
+        ini_section = "MSG_YOS";
         
     }
 

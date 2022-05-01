@@ -13,7 +13,7 @@ if (sprite_index == spr_gswitch) {
     alarm[0] = 60;
     
     //Activate P-Switch events
-    with (obj_levelcontrol) {
+    with (obj_controller_level) {
     
         alarm[7] = 700;
         event_user(3);

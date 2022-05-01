@@ -1,2 +1,2 @@
-inisection = "Athletic";
-leveltime = 0;
+ini_section = "Athletic";
+level_time = 0;

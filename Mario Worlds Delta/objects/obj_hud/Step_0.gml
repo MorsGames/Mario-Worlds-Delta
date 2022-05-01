@@ -1,11 +1,11 @@
 /// @description Set up special effect for the timer text
 
 //Do this only is levelcontrol is active
-if (instance_exists(obj_levelcontrol)) {
+if (instance_exists(obj_controller_level)) {
     
     //Fade timer to red if less than 100 seconds
     if (global.time > -1)
-    && (obj_levelcontrol.leveltime != 0) {
+    && (obj_controller_level.level_time != 0) {
     
         //If there's less than 100 seconds left
         if (global.time <= 100) {
@@ -39,20 +39,16 @@ if (instance_exists(obj_levelcontrol)) {
     || (obj_controller.hud_type == 5))
     && (instance_number(obj_goal_gate) > 0) {
         
-        if (obj_levelcontrol.x > obj_goal_gate.x-256) 
-        || (obj_levelcontrol.x > obj_goal_gate.x)
+        if (obj_controller_level.x > obj_goal_gate.x-256) 
+        || (obj_controller_level.x > obj_goal_gate.x)
             display = 2;
         else
             display -= 0.025;
     }
     else
         display -= 0.025;
-}
 
-///Keep track of the time
-
-if (instance_exists(obj_levelcontrol)) {
-
+	// Keep track of the time
     displaytime = global.time;
     displaydragoncoins = global.dcoins;    
 }

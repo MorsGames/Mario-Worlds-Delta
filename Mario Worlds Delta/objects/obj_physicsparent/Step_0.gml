@@ -70,7 +70,7 @@ if (water)
 
 //Otherwise
 else if (!water)
-&& (swimming == true) {
+&& (swimming) {
 
     //Stop swimming
     swimming = false;

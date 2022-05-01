@@ -1,10 +1,10 @@
 /// @description Inactive "P" platform logic
 
 //If the level controller exists
-if (instance_exists(obj_levelcontrol)) {
+if (instance_exists(obj_controller_level)) {
     
     //Turn solid if the P-Switch is active
-    if (obj_levelcontrol.switchon == 1) {
+    if (obj_controller_level.switchon == 1) {
     
         //Set solid frame
         image_speed = 0;

@@ -1,7 +1,7 @@
 /// @description Draw fishies
 
 //Set blending mode
-draw_set_blend_mode(bm_add);
+gpu_set_blendmode(bm_add);
 
 //Draw the background
 if (background_get_height(fgr_fish) < room_height)
@@ -15,5 +15,5 @@ else {
 }
 
 //Set blending mode to normal
-draw_set_blend_mode(bm_normal);
+gpu_set_blendmode(bm_normal);
 

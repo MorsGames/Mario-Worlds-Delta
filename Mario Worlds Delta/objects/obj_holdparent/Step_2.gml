@@ -1,7 +1,7 @@
 /// @description Held item logic (When held)
 /// @param When held
 
-if (held == true) {
+if (held) {
 
     //Do not allow swim
     swimming = false;
@@ -13,7 +13,7 @@ if (held == true) {
     if (instance_exists(obj_playerparent)) {
     
         //If the player control is not disabled
-        if (obj_playerparent.control_enable == true) {
+        if (obj_playerparent.control_enable) {
         
             //If the player is turning
             if (obj_playerparent.turnnow == 1) {
@@ -67,7 +67,7 @@ if (held == true) {
             dir = obj_playerparent.xscale;
             
             //If the player is crouched down
-            if (obj_playerparent.crouch == true)
+            if (obj_playerparent.crouch)
                 y = obj_playerparent.y;
                 
             //Otherwise

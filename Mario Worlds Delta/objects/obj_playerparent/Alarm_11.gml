@@ -1,8 +1,8 @@
 /// @description Create eyecandy when certain conditions meet
 
 //If the player is skidding, crouched or sliding down a slope
-if (crouch == true) 
-|| (sliding == true) 
+if (crouch) 
+|| (sliding) 
 || (sprite_index == player_skid()) {
 
     //Make sure that the player is moving

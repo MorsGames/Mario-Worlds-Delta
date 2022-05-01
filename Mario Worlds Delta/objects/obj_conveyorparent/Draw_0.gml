@@ -8,7 +8,7 @@ if (toggle == false)
     event_user(1);
 
 //Otherwise, if the conveyor can change its direction with on/off blocks
-else if (toggle == true) {
+else if (toggle) {
 
     //Set up the palette
     pal_swap_set(spr_palette_conveyor, 1+global.onoff_block);

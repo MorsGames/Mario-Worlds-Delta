@@ -29,5 +29,5 @@ alarm[1] = 7;
 
 //Display time (since time resets at the end of a level)
 displaytime = 0;
-displaydragoncoins = 0;
+displaydragoncoins = -1;
 

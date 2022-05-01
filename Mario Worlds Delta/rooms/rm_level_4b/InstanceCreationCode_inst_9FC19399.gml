@@ -1,2 +1,2 @@
-inisection = "Overworld";
-leveltime = 1;
+ini_section = "Overworld";
+level_time = 1;

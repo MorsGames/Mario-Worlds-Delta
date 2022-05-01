@@ -34,10 +34,10 @@ if (global.exit_id == myid) {
                     alarm[0] = 32;
                     
                     //Put camera in position
-                    if (instance_exists(obj_levelcontrol)) {
+                    if (instance_exists(obj_controller_level)) {
                     
-                        obj_levelcontrol.x = x;
-                        obj_levelcontrol.y = y;
+                        obj_controller_level.x = x;
+                        obj_controller_level.y = y;
                     }
                 }
             

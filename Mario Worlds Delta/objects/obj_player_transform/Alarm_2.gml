@@ -10,7 +10,7 @@ sprite_index = obj_playerparent.sprite_index;
 if (loop == 0) {
 
     //If the screen did froze
-    if (global.screenfreeze == true) {
+    if (global.screenfreeze) {
 
         //Delete screenshot
         background_delete(back);

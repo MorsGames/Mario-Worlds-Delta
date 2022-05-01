@@ -1,7 +1,7 @@
 /// @description Handle block movement if not static
 
 if (ready == 1)
-&& (backnforth == true) {
+&& (backnforth) {
 
     //If the block is moving to the right.
     if (dir == 1) {

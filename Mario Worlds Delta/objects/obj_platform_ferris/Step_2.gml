@@ -5,7 +5,7 @@
 */
 
 //If the platforms are moving.
-if (active == true) {
+if (active) {
 
     //Check if the player is above the platforms.
     for (i=0; i<amount; i++;) {

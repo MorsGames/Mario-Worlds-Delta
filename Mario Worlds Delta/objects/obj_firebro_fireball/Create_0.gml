@@ -10,7 +10,7 @@ audio_stop_play_sound(snd_fireball, 0, false);
 image_speed = 0.2;
     
 //Set up orange light
-if (instance_exists(obj_lightcontrol)) {
+if (instance_exists(obj_controller_lighting)) {
     
     mylight = instance_create(0, 0, obj_light_npc);
     with (mylight) {

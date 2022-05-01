@@ -38,7 +38,7 @@ if (player)
     }
     
     //Stop both music and timer
-    with (obj_levelcontrol) {
+    with (obj_controller_level) {
     
         musicdisable = true;
         alarm[1] = 1;

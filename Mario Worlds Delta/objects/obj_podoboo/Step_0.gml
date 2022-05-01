@@ -4,7 +4,7 @@
 deathsprite = sprite_index;
 
 //Make it fall when reaching start position.
-if ((y < ystart+39) && (ready == true)) {
+if ((y < ystart+39) && (ready)) {
 
     //Make it fall.
     ready = false;

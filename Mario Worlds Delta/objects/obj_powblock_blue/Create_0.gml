@@ -13,7 +13,7 @@ ready = 0;
 mytop = instance_create(x-8, y+1, obj_semisolid);
 
 //Create light if required
-if (instance_exists(obj_lightcontrol)) {
+if (instance_exists(obj_controller_lighting)) {
 
     mylight = instance_create(0, 0, obj_light_npc);
     with (mylight)    

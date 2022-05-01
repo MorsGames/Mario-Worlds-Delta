@@ -4,7 +4,7 @@
 cloud_index += 0.125;
 
 //If activated, move towards player
-if (activated == true) {
+if (activated) {
 
     if (instance_exists(obj_playerparent)) {
     
@@ -159,7 +159,7 @@ if (fisher = false) && (instance_exists(bait)) && (activated) {
         instance_destroy();    
 }
 
-if (activated) && (canthrow == true) {
+if (activated) && (canthrow) {
 
     alarm[0] = irandom_range(100,350);    
     canthrow = 2;    

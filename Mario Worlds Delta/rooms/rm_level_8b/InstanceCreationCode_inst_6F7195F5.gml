@@ -1,2 +1,2 @@
-inisection = "Airship"
-leveltime = 400;
+ini_section = "Airship"
+level_time = 400;

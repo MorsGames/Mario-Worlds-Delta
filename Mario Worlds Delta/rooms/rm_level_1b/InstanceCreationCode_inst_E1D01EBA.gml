@@ -1,2 +1,2 @@
-inisection = "Underground";
-leveltime = 1;
+ini_section = "Underground";
+level_time = 1;

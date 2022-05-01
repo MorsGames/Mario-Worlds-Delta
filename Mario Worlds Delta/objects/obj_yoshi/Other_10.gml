@@ -7,8 +7,8 @@ if (mouthholder != noone) {
     audio_stop_play_sound(snd_spit, 0, false);
     
     //Spit out the item
-    if (obj_playerparent.crouch == true) 
-    || (obj_playerparent.sliding == true) {
+    if (obj_playerparent.crouch) 
+    || (obj_playerparent.sliding) {
     
         //If the item held on yoshi's mouth is a shell
         if (mouthholder == obj_shell) {

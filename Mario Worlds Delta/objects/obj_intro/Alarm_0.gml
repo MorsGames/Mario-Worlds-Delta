@@ -7,7 +7,7 @@ with (instance_create(0, 0, obj_message)) {
     switchmsg = 2;
     
     // Grab the text
-    inisection = other.inisection;
+    ini_section = other.ini_section;
     
 }
 

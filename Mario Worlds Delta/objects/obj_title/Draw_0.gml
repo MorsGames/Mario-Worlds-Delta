@@ -25,7 +25,7 @@ if (scale < 300) {
         if (scale > 0.01) {
         
             //Set the blending mode
-            draw_set_blend_mode(bm_subtract);
+            gpu_set_blendmode(bm_subtract);
             
             //Draw the transition image.
             draw_set_circle_precision(64);
@@ -34,7 +34,7 @@ if (scale < 300) {
             draw_circle(__view_get( e__VW.XView, 0 ) + (__view_get( e__VW.WView, 0 )/2), __view_get( e__VW.YView, 0 ) + (__view_get( e__VW.HView, 0 )/2), scale, false);
             
             //Set the blending end mode
-            draw_set_blend_mode(bm_normal);
+            gpu_set_blendmode(bm_normal);
         
         }
         

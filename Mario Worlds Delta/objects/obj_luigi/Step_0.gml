@@ -14,7 +14,7 @@ if (instance_exists(obj_playerparent)) {
     && (jumpstyle == 0)
     && (global.mount == 0)
     && !(instance_exists(obj_cape_fly))
-    && (instance_exists(obj_levelcontrol)) {
+    && (instance_exists(obj_controller_level)) {
     
         //If the 'Scuttle' sound is not playing
         if (!audio_is_playing(snd_scuttle)) {

@@ -10,7 +10,7 @@ function allow_move() {
 	*/
 
 	//If the player is crouched down
-	if (crouch == true) {
+	if (crouch) {
 
 	    //If the player is jumping
 	    if (state == statetype.jump)

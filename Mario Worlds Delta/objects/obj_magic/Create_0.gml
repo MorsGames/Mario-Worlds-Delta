@@ -19,5 +19,5 @@ alarm[1] = 2;
 if (instance_exists(obj_playerparent))
     move_towards_point(obj_playerparent.x, obj_playerparent.y, 2);
 else
-    move_towards_point(obj_levelcontrol.x, obj_levelcontrol.y, 2);
+    move_towards_point(obj_controller_level.x, obj_controller_level.y, 2);
 

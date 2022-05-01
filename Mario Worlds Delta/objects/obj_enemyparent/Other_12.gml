@@ -6,7 +6,7 @@ if (overlap)
 && (overlap.vulnerable < 99) {
 
     //Make sure the variable is defined
-    if (enemyturn == true) {
+    if (enemyturn) {
 
         //Go right if the object is further to the right or in the same spot and a higher id.
         if ((bbox_left+bbox_right)*0.5 > (overlap.bbox_left+overlap.bbox_right)*0.5)
@@ -25,7 +25,7 @@ if (overlap2)
 && (overlap2.vulnerable < 99) {
 
     //Make sure the variable is defined
-    if (enemyturn == true) {
+    if (enemyturn) {
 
         //Go right if the object is further to the right or in the same spot and a higher id.
         if ((bbox_left+bbox_right)*0.5 > (overlap2.bbox_left+overlap2.bbox_right)*0.5)

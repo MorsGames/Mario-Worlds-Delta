@@ -2,13 +2,10 @@
 /// @param Left
 
 /*
-**  This item uses creation code!
+**  This item uses variable definitions
 **
 **  secret      = To open up the secret path in the map
 */
-
-//Default values
-secret = 0;
 
 //Do not animate
 image_speed = 0;

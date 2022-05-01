@@ -83,7 +83,7 @@ if (flying > 0)
 }
 
 //If gravity is enabled
-if (gravity_enable == true) {
+if (gravity_enable) {
     
     //If moving down
     if (vspeed >= 0) {
@@ -158,7 +158,7 @@ if (gravity_enable == true) {
         }
         
         //Otherwise, if the player is sliding down a slope
-        else if (sliding == true) {
+        else if (sliding) {
         
             //Perform player slide physics
             player_behaviour_slide();
@@ -173,7 +173,7 @@ if (gravity_enable == true) {
     }
     
     //Otherwise, if the player is swimming
-    else if (swimming == true) {
+    else if (swimming) {
     
         //Perform player swim physics
         player_behaviour_swim();
@@ -357,7 +357,7 @@ if (state == statetype.jump)
 if (state != statetype.climb) {
 
     //If the player is not jumping and the controls are not disabled
-    if (control_enable == true)
+    if (control_enable)
     && (sliding == false)
     && (state != statetype.jump) {
     
@@ -372,8 +372,8 @@ if (state != statetype.climb) {
     
     //Manage player projectiles if 'Action 2' is pressed and the barrier is deactivated.
     if (input_check_pressed(input.action1))
-    && (instance_number(obj_levelcontrol) > 0)
-    && (obj_levelcontrol.barrier == true)
+    && (instance_number(obj_controller_level) > 0)
+    && (obj_controller_level.barrier)
         alarm[10] = 1;
 }
 
@@ -418,7 +418,7 @@ if (water)
 
 //Otherwise, if the player had enough swimming and wants to get out of water
 else if (!water)
-&& (swimming == true) {
+&& (swimming) {
 
     //If there's not a solid above
     if (!collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_top, obj_solid, 1, 0)) 
@@ -484,11 +484,11 @@ if (vspeed == 0)
     }
     
     //Otherwise, if the player gets stuck on a wall.
-    else if (inwall == true) {
+    else if (inwall) {
     
         //If the player is not longer stuck, allow movement
         if (!collision_line(bbox_left, bbox_top, bbox_right, bbox_top, obj_solid, 1, 0)) 
-        || (crouch == true) 
+        || (crouch) 
         || (global.powerup == cs_pow_small) {
         
             //End wall movement
@@ -538,7 +538,7 @@ if (inwall == false)
         
 //If the player is not in contact with water.
 if (!collision_rectangle(bbox_left, y, bbox_right, bbox_bottom, obj_swim, 0, 0))
-&& (swimming == true)
+&& (swimming)
     swimming = false;
 
 //Prevent the player from going too high on the level

@@ -55,7 +55,7 @@ if (input_check_pressed(input.up))
 if (sprite_index == spr_door_p)
 && (image_speed == 0)
 && (image_index == 0)
-&& (obj_levelcontrol.switchon == 0) {
+&& (obj_controller_level.switchon == 0) {
 
     sprite_index = spr_door_p_outline;
     image_speed = 0.1;

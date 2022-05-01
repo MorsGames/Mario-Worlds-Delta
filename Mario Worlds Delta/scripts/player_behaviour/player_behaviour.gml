@@ -86,7 +86,7 @@ function player_behaviour() {
 
 	//If controls are not disabled and the player is not embed in a wall
 	if (inwall == false) 
-	&& (control_enable == true) {
+	&& (control_enable) {
 
 	    //If 'Action 1' or 'Action 2' is pressed...
 	    if ((input_check_pressed(input.action0)) || (input_check_pressed(input.action2)))
@@ -187,7 +187,7 @@ function player_behaviour() {
 	        else {
                 
 	            //Jump less if you are doing a spin jump
-	            if (jumpstyle == true) {
+	            if (jumpstyle) {
             
 	                //Temporary variable
 	                var temprun;
@@ -434,7 +434,7 @@ function player_behaviour() {
 	//If 'Up' is pressed and there's a climbable vine or fence in position
 	if (collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_top, obj_climb, 1, 0)) 
 	&& (holding == 0)
-	&& (control_enable == true)
+	&& (control_enable)
 	&& (input_check(input.up)) {
 
 	    //Change to climbing state
@@ -447,7 +447,7 @@ function player_behaviour() {
 
 	//If 'Down' is pressed and there's a slope below the player
 	if (input_check(input.down)) 
-	&& (control_enable == true)
+	&& (control_enable)
 	&& (sliding == false)
 	&& (state != statetype.jump)
 	&& (collision_rectangle(bbox_left, bbox_bottom+1, bbox_right, bbox_bottom+2, obj_slopeparent, 1, 0))

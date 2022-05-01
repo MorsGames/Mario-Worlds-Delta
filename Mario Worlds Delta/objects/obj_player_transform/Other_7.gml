@@ -1,7 +1,7 @@
 /// @description If this object used an animation, destroy via this event
 
 //If the screen did froze
-if (global.screenfreeze == true) {
+if (global.screenfreeze) {
 
     //Delete screenshot
     background_delete(back);

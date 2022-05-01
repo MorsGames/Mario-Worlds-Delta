@@ -7,6 +7,6 @@ audio_stop_play_sound(snd_switch, 0, false);
 ready = 0;
 
 //Reset light
-if (instance_exists(obj_lightcontrol))
-    with (obj_lightcontrol) intensity = 128;
+if (instance_exists(obj_controller_lighting))
+    with (obj_controller_lighting) intensity = 128;
 

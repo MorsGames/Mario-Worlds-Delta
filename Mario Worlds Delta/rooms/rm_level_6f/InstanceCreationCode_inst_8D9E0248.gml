@@ -1,2 +1,2 @@
-inisection = "Boss"
-leveltime = 1;
+ini_section = "Boss"
+level_time = 1;

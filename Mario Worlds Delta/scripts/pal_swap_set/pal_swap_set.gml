@@ -24,7 +24,7 @@ function pal_swap_set() {
 	var UVs = sprite_get_uvs(_pal_sprite, 0);
 
 	texture_set_stage(Pal_Texture, tex);
-	texture_set_interpolation_ext(Pal_Texture, 1)
+	gpu_set_texfilter_ext(Pal_Texture, 1)
 
 	var texel_x = texture_get_texel_width(tex);
 	var texel_y = texture_get_texel_height(tex);

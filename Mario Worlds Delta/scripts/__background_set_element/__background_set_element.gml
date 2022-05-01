@@ -107,7 +107,7 @@ function __background_set_element(argument0, argument1, argument2, argument3, ar
 		if (__slots[__i] != -1)
 		{
 			var __depth = 0;
-			if (__isforeground[__i] == true)
+			if (__isforeground[__i])
 			{
 				__depth = __nearestdepth - (__i * __depthinc);
 			}
@@ -137,7 +137,7 @@ function __background_set_element(argument0, argument1, argument2, argument3, ar
 	}
 	else
 	{
-		if (__fore == true)
+		if (__fore)
 		{
 			__layername = __fgstring + string(__bind);
 			__layerdepth = __nearestdepth - (__bind * __depthinc);

@@ -3,7 +3,7 @@
 //If the player does exist
 if (instance_exists(obj_playerparent)) {
     
-    if (player_on == true) {
+    if (player_on) {
     
         obj_playerparent.x = x;
         obj_playerparent.y = y-6;

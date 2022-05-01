@@ -7,7 +7,7 @@ audio_stop_play_sound(snd_sprout, 0, false);
 audio_loop_sound(bgm_pswitch, 468000, 535500, 44100, 1);
 
 //Stop music
-obj_levelcontrol.alarm[1] = 1;
+obj_controller_level.alarm[1] = 1;
 
 //Stop invincibility music
 audio_stop_sound(bgm_starman);

@@ -1,7 +1,7 @@
 /// @description Handle screen shaking
 
 //If the screen is shaking
-if (shake == true) {
+if (shake) {
 
     //Increment shake_anim variable
     shake_anim++;
